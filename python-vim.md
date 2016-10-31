@@ -169,6 +169,7 @@ let g:syntastic_check_on_wq = 0
 安装Powerline字体 
 > $ git clone https://github.com/powerline/fonts
 > $ cd fonts/ 
+> $ ./install.sh
 
 然后进入命令行选择你ubuntu专用的字体
 ![](http://img.blog.csdn.net/20160730115839670)
@@ -237,4 +238,4 @@ vmap <C-x> "+x "剪切快捷键
 set backspace=indent,eol,start " 退格键不能使用的bug
 ```
 
-[完整配置](https://github.com/DBwater/blog_back_up/blob/master/vim%E5%A4%87%E4%BB%BD/vim)
+[完整配置](https://github.com/DBwater/back_up/tree/master/vim%E5%A4%87%E4%BB%BD)

@@ -1,0 +1,36 @@
+set number
+set history=1000000
+set tabstop=4
+set shiftwidth=4
+
+set smarttab
+
+set nocp
+filetype plugin indent on
+
+colo evening
+
+set nobackup
+set noswapfile
+
+set mouse=a
+set selection=exclusive
+set selectmode=mouse,key
+
+map <F6> :call CR()<CR>
+func! CR()
+exec "w"
+exec "!g++ % -o %<"
+exec "! %<"
+endfunc
+
+imap <c-]> {<cr><c-o>O<left><right>
+
+map <C-A> ggVG"+y
+
+
+inoremap ( ()<LEFT>
+inoremap [ []<LEFT>
+inoremap { {}<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
